@@ -2,6 +2,10 @@ html { box-sizing: border-box; }
 *, *:before, *:after { box-sizing: inherit; }
 :root { font-size: 15px; }
 :focus { outline: none; }
+@media only print {
+	body * { display: none !important; }
+	body:after { content: "Don't waste paper!"; }
+}
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1rem;
