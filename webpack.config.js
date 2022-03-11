@@ -1,5 +1,6 @@
 const path = require("path");
 
+const mode = production // production or development
 const port = 80;
 const openBrowser = true;
 
@@ -14,7 +15,7 @@ module.exports = {
         path: path.resolve(__dirname, "public"),
         publicPath: "/",
     },
-    mode: "development",
+    mode: mode,
     devtool: "source-map",
     devServer: {
         port: port,
