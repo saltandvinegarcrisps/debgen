@@ -20,7 +20,7 @@ or
 npm install
 ```
 
-## Starting server
+## Starting dev server
 
 ### Dev mode
 
@@ -28,7 +28,7 @@ npm install
 yarn dev
 ```
 
-### Normal mode
+## Building code
 
 ```
 yarn start
