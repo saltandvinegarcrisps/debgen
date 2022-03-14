@@ -31,5 +31,5 @@ yarn dev
 ## Building code
 
 ```
-yarn start
+yarn build
 ```

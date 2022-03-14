@@ -1,6 +1,6 @@
 const path = require("path");
 
-const mode = production // production or development
+const mode = 'production' // production or development
 const port = 80;
 const openBrowser = true;
 
