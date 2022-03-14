@@ -9,10 +9,14 @@ async function initI18next() {
         .init({
             debug: true,
             supportedLngs: ["de", "en"],
+            load: "languageOnly",
             fallbackLng: "en",
             nonExplicitSupportedLngs: true,
             backend: {
                 loadPath: "/lang/{{lng}}.json",
+            },
+            detection: {
+                caches: ['localStorage'],
             },
         });
 }
