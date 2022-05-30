@@ -32,8 +32,8 @@
     var generate = function () {
         var ftp = mirror.options[mirror.selectedIndex].value,
             rel = releases.options[releases.selectedIndex].value;
-        
-        if ((ftp == "none") || rel == "none") return;
+
+        if (ftp == "none" || rel == "none") return;
 
         var comps = getComponents();
         var arch = getArch();
@@ -49,8 +49,16 @@
 
         if (security.checked) {
             appendSource(['']);
-            appendSource(['deb', arch, 'http://security.debian.org/', rel + '/updates', comps]);
-            if (src.checked) appendSource(['deb-src', arch, 'http://security.debian.org/', rel + '/updates', comps]);
+
+            if (rel == "bullseye") {
+                appendSource(['deb', arch, 'http://security.debian.org/', 'bullseye-updates', comps]);
+                if (src.checked) appendSource(['deb-src', arch, 'http://security.debian.org/', 'bullseye-updates', comps]);
+            }
+
+            else {
+                appendSource(['deb', arch, 'http://security.debian.org/', rel + '/updates', comps]);
+                if (src.checked) appendSource(['deb-src', arch, 'http://security.debian.org/', rel + '/updates', comps]);
+            }
         }
 
         list.value = sourceList.join("\n");
