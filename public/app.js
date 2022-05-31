@@ -51,8 +51,8 @@
             appendSource(['']);
 
             if (rel == "bullseye") {
-                appendSource(['deb', arch, 'http://security.debian.org/', 'bullseye-updates', comps]);
-                if (src.checked) appendSource(['deb-src', arch, 'http://security.debian.org/', 'bullseye-updates', comps]);
+                appendSource(['deb', arch, 'http://security.debian.org/', 'bullseye-security', comps]);
+                if (src.checked) appendSource(['deb-src', arch, 'http://security.debian.org/', 'bullseye-security', comps]);
             }
 
             else {
