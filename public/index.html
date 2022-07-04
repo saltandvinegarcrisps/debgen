@@ -12,8 +12,12 @@
     <meta name="google-site-verification" content="M1qySTPCp0tj73JiCP1yjJKSwVwGIDoqCd8385lwdl0">
     <title data-i18n-key="title">Debian Sources List Generator</title>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Code+Pro">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Code+Pro">
+    
+    <link rel="stylesheet" href="highlight.js/styles/default.min.css">
+    <script src="highlight.js/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 </head>
@@ -28,7 +32,11 @@
                         <option value="de">Deutsch</option>
                         <option value="en">English</option>
                     </select>
-                    <a class="github-button" href="https://github.com/rwarasaurus/debgen/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/rwarasaurus/debgen/network" data-count-api="/repos/rwarasaurus/debgen#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork rwarasaurus/debgen on GitHub">Fork
+                    <a class="github-button" href="https://github.com/rwarasaurus/debgen" data-icon="octicon-repo" data-style="mega">
+                        GitHub
+                    </a>
+                    <a class="github-button" href="https://github.com/rwarasaurus/debgen/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/rwarasaurus/debgen/network" data-count-api="/repos/rwarasaurus/debgen#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork rwarasaurus/debgen on GitHub">
+                        Fork
                     </a>
                 </div>
             </div>
@@ -152,6 +160,38 @@
                 <label>
                     <input name="security" type="checkbox" checked> Security
                 </label>
+                <br>
+                <br>
+                <u>Extra repos</u>
+                <br>
+                <label>
+                    <input name="php" type="checkbox"> PHP
+                </label>
+                <br>
+                <label>
+                    Node
+                    <select name="node">
+                        <option selected></option>
+                        <option value="0.10">Version 0.10</option>
+                        <option value="0.12">Version 0.12</option>
+                        <option value="4.x">Version 4.x</option>
+                        <option value="5.x">Version 5.x</option>
+                        <option value="6.x">Version 6.x</option>
+                        <option value="7.x">Version 7.x</option>
+                        <option value="8.x">Version 8.x</option>
+                        <option value="9.x">Version 9.x</option>
+                        <option value="10.x">Version 10.x</option>
+                        <option value="11.x">Version 11.x</option>
+                        <option value="12.x">Version 12</option>
+                        <option value="13.x">Version 13</option>
+                        <option value="14.x">Version 14</option>
+                        <option value="15.x">Version 15</option>
+                        <option value="16.x">Version 16</option>
+                        <option value="18.x">Version 18</option>
+                        <option value="dev">Developer</option>
+                        <option value="current.x">Current</option>
+                    </select>
+                </label>
             </p>
 
             <p>
@@ -160,20 +200,32 @@
                     <br>
                     <textarea autocomplete="off"
                               autocorrect="off"
-                              autocapitalize="off" 
-                              pellcheck="false"
+                              autocapitalize="off"
                               name="list"
-                              rows="10"
+                              rows="20"
                               cols="100">
                     </textarea>
                 </label>
             </p>
             <p>
-                <button class="button" data-i18n-key="generate"></button>
+                <button class="button" id="button" data-i18n-key="generate"></button>
             </p>
+            <br>
+            <div id="php">
+                <p data-i18n-key="note.keys"></p>
+                <br>
+                <br>
+                PHP
+                <pre>
+                    <code>curl -fsSL https://packages.sury.org/php/apt.gpg -o /usr/share/keyrings/php-archive-keyring.gpg</code>
+                </pre>
+                Node
+                <pre>
+                    <code>curl -fsSL https://deb.nodesource.com/gpgkey/nodesource.gpg.key | gpg --dearmor | sudo tee /usr/share/keyrings/nodesource.gpg > /dev/null</code>
+                </pre>
+            </div>
         </div>
     </main>
-    <div class="wrap wrap--footer"></div>
 
     <script src="app.js"></script>
     <script src="bundle.js"></script>

@@ -1,5 +1,10 @@
 {
     "title": "Sources List Generator für Debian",
+    "releases": "Veröffentlichungen",
+    "generate": "Generieren",
+    "note": {
+        "keys": "Bedenke, dass erst noch die Schlüssel heruntergeladen werden müssen:"
+    },
     "country": {
         "austria": "Österreich",
         "australia": "Australien",
@@ -47,7 +52,5 @@
         "taiwan": "Taiwan",
         "ukraine": "Ukraine",
         "united_states": "Vereinigte Staaten"
-    },
-    "releases": "Veröffentlichungen",
-    "generate": "Generieren"
+    }
 }

@@ -21,38 +21,6 @@ main {
 	background: #fff;
 }
 
-.wrap {
-	width: 90%;
-	max-width: 60rem;
-	margin: 0 auto;
-	overflow: hidden;
-	position: relative;
-}
-
-.wrap--footer {
-	padding: 1rem 0;
-}
-
-.elemnts--inline p {
-	display: inline-block;
-	margin-right: 1rem;
-}
-
-.wrap--header {
-	border-bottom: 1px solid #efefef;
-}
-
-.fixed--right {
-	position: absolute;
-	top: 1.2rem;
-	right: 0;
-}
-
-.header {
-	color: #005F6B;
-	font-weight: 400;
-}
-
 select {
 	border: 1px solid #efefef;
 	background: #fff;
@@ -85,4 +53,36 @@ button {
 	font-size: 110%;
 	cursor: pointer;
 	border-radius: 3px;
+}
+
+.wrap {
+	width: 90%;
+	max-width: 60rem;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.elemnts--inline p {
+	display: inline-block;
+	margin-right: 1rem;
+}
+
+.wrap--header {
+	border-bottom: 1px solid #efefef;
+}
+
+.fixed--right {
+	position: absolute;
+	top: 1.2rem;
+	right: 0;
+}
+
+.header {
+	color: #005F6B;
+	font-weight: 400;
+}
+
+.warn {
+	color: orange
 }
