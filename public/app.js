@@ -82,7 +82,7 @@
                 appendSource(['deb-src [signed-by=/usr/share/keyrings/nodesource.gpg] https://deb.nodesource.com/setup_dev main'])
             }
 
-            if (node == "current.x") {
+            else if (node == "current.x") {
                 appendSource(['deb [signed-by=/usr/share/keyrings/nodesource.gpg] https://deb.nodesource.com/setup_current.x main'])
                 appendSource(['deb-src [signed-by=/usr/share/keyrings/nodesource.gpg] https://deb.nodesource.com/setup_current.x main'])
             }

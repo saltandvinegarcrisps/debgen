@@ -14,6 +14,9 @@
 
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Code+Pro">
+    
+    <script src="prism/prism.js"></script>
+    <link rel="stylesheet" href="prism/prism.css">
 </head>
 
 <body>
@@ -205,19 +208,25 @@
                 <button class="button" data-i18n-key="generate"></button>
             </p>
             <br>
-            <div id="php">
-                <p data-i18n-key="note.keys"></p>
-                <br>
-                <br>
-                PHP
-                <pre>
-                    <code>curl -fsSL https://packages.sury.org/php/apt.gpg -o /usr/share/keyrings/php-archive-keyring.gpg</code>
-                </pre>
-                Node
-                <pre>
-                    <code>curl -fsSL https://deb.nodesource.com/gpgkey/nodesource.gpg.key | gpg --dearmor | sudo tee /usr/share/keyrings/nodesource.gpg > /dev/null</code>
-                </pre>
-            </div>
+            <p data-i18n-key="note.keys"></p>
+            <br>
+            <br>
+            <U>PHP</U>
+            <br>
+            <pre>
+                <code class="language-bash">
+                    curl -fsSL https://packages.sury.org/php/apt.gpg -o /usr/share/keyrings/php-archive-keyring.gpg
+                </code>
+            </pre>
+            <br>
+            <br>
+            <u>Node</u>
+            <br>
+            <pre>
+                <code class="language-bash">
+                    curl -fsSL https://deb.nodesource.com/gpgkey/nodesource.gpg.key | gpg --dearmor | sudo tee /usr/share/keyrings/nodesource.gpg > /dev/null
+                </code>
+            </pre>
         </div>
     </main>
 
