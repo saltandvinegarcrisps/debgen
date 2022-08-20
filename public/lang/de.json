@@ -1,7 +1,10 @@
 {
     "title": "Sources List Generator für Debian",
     "releases": "Veröffentlichungen",
-    "generate": "Generieren",
+    "button": {
+        "generate": "Generieren",
+        "download": "Herunterladen"
+    },
     "note": {
         "keys": "Bedenke, dass erst noch die Schlüssel heruntergeladen werden müssen:"
     },
