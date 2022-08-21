@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Code+Pro">
-    
+
     <script src="prism/prism.js"></script>
     <link rel="stylesheet" href="prism/prism.css">
 
@@ -215,8 +215,9 @@
                               autocorrect="off"
                               autocapitalize="off"
                               id="source_list"
+                              pellcheck="false"
                               name="list"
-                              rows="20"
+                              rows="10"
                               cols="100">
                     </textarea>
                 </label>
@@ -224,7 +225,8 @@
             <button class="button" data-i18n-key="button.generate"></button>
             <button data-i18n-key="button.download" onClick="MakeTextDownload(
                             document.getElementById(
-                                'source_list').value.replaceAll(/(?<!\r)\n/g,'\r\n'
+                                    'source_list'
+                                ).value.replaceAll(/(?<!\r)\n/g,'\r\n'
                             )
                     )">
             </button>
