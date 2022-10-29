@@ -1,11 +1,29 @@
-html { box-sizing: border-box; }
-*, *:before, *:after { box-sizing: inherit; }
-:root { font-size: 15px; }
-:focus { outline: none; }
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+:root {
+	font-size: 15px;
+}
+
+:focus {
+	outline: none;
+}
 
 @media only print {
-	body * { display: none !important; }
-	body:after { content: "Don't waste paper!"; }
+	body * {
+		display: none !important;
+	}
+
+	body:after {
+		content: "Don't waste paper!";
+	}
 }
 
 body {
@@ -14,11 +32,54 @@ body {
 	line-height: 162%;
 	color: #343838;
 	margin: 0;
-	background: #efefef;
+	background: #2b2828;
 }
 
 main {
-	background: #fff;
+	color: #ffffff;
+	background: #2b2828;
+}
+
+label {
+	border-color: #ffffff;
+}
+
+option {
+	color: #ffffff;
+}
+
+select {
+	border: 1px solid #2b2828;
+	background: #2b2828;
+	color: #ffffff;
+	padding: .4rem;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+textarea {
+	display: block;
+	width: 100%;
+	font-family: 'Source Code Pro', monospace;
+	font-size: inherit;
+	color: #ffffff;
+	border-color: #ffffff;
+	background: #2b2828;
+	padding: 1rem;
+	resize: vertical;
+}
+
+button {
+	display: inline-block;
+	font-weight: 600;
+	color: #2b2828;
+	background: #00B4CC;
+	border: none;
+	border-bottom: 4px solid #008C9E;
+	padding: 1rem 1.6rem;
+	font-size: 110%;
+	cursor: pointer;
+	border-radius: 3px;
 }
 
 .wrap {
@@ -29,17 +90,13 @@ main {
 	position: relative;
 }
 
-.wrap--footer {
-	padding: 1rem 0;
-}
-
 .elemnts--inline p {
 	display: inline-block;
 	margin-right: 1rem;
 }
 
 .wrap--header {
-	border-bottom: 1px solid #efefef;
+	border-bottom: 1px solid #2b2828;
 }
 
 .fixed--right {
@@ -53,36 +110,6 @@ main {
 	font-weight: 400;
 }
 
-select {
-	border: 1px solid #efefef;
-	background: #fff;
-	padding: .4rem;
-	font-family: inherit;
-	font-size: inherit;
-	color: #222;
-}
-
-textarea {
-	display: block;
-	width: 100%;
-	font-family: 'Source Code Pro', monospace;
-	font-size: inherit;
-	color: #222;
-	background: #f5f5f5;
-	border: none;
-	padding: 1rem;
-	resize: vertical;
-}
-
-button {
-	display: inline-block;
-	font-weight: 600;
-	color: #fff;
-	background: #00B4CC;
-	border: none;
-	border-bottom: 4px solid #008C9E;
-	padding: 1rem 1.6rem;
-	font-size: 110%;
-	cursor: pointer;
-	border-radius: 3px;
+.warn {
+	color: orange
 }

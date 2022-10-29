@@ -33,3 +33,13 @@ yarn dev
 ```
 yarn build
 ```
+
+# Contribute
+
+## Code
+
+You want to contribute something to the code? [Fork this repository](https://github.com/rwarasaurus/debgen/fork) and get started... Then [open a pull request](https://github.com/rwarasaurus/debgen/compare)
+
+## Translate
+
+You want to keep debgen multilingual? Then visit [our official Crowdin project](https://crowdin.com/project/debgen)...

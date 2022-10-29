@@ -1,5 +1,13 @@
 {
     "title": "Sources List Generator für Debian",
+    "releases": "Veröffentlichungen",
+    "button": {
+        "generate": "Generieren",
+        "download": "Herunterladen"
+    },
+    "note": {
+        "keys": "Bedenke, dass erst noch die Schlüssel heruntergeladen werden müssen:"
+    },
     "country": {
         "austria": "Österreich",
         "australia": "Australien",
@@ -9,7 +17,7 @@
         "belarus": "Belarus",
         "canada": "Canada",
         "china": "China",
-        "czech_republic": "Czech Republic",
+        "czech_republic": "Tschechische Republik",
         "denmark": "Dänemark",
         "estonia": "Estonia",
         "finland": "Finnland",
@@ -22,7 +30,7 @@
         "croatia": "Kroatien",
         "hungary": "Ungarn",
         "iran": "Iran",
-        "ireland": "Ireland",
+        "ireland": "Irland",
         "iceland": "Island",
         "italy": "Italien",
         "japan": "Japan",
@@ -47,7 +55,5 @@
         "taiwan": "Taiwan",
         "ukraine": "Ukraine",
         "united_states": "Vereinigte Staaten"
-    },
-    "releases": "Veröffentlichungen",
-    "generate": "Generieren"
+    }
 }
