@@ -21,7 +21,7 @@
         "uglify-js": "^3.15.3"
     },
     "devDependencies": {
-        "webpack": "^5.65.0",
+        "webpack": "^5.76.0",
         "webpack-cli": "^4.9.1",
         "webpack-dev-server": "^4.7.4",
         "webpack-server": "^0.1.2"
